@@ -1,0 +1,51 @@
+{
+    "name": "tobento/service-repository-relation",
+    "version": "2.0",
+    "type": "library",
+    "description": "Relations between storage repositories such as many to one, one to many and many to many.",
+    "keywords": [
+        "tobento",
+        "package",
+        "PHP",
+        "repository",
+        "relations"
+    ],
+    "homepage": "https://www.tobento.ch",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tobias Strub",
+            "email": "info@tobento.ch",
+            "homepage": "https://www.tobento.ch"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.4",
+        "tobento/service-iterable": "^2.0",
+        "tobento/service-repository": "^2.0",
+        "tobento/service-repository-storage": "^2.0",
+        "tobento/service-storage": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.3",
+        "vimeo/psalm": "^6.13",
+        "tobento/service-database": "^2.0",
+        "tobento/service-seeder": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tobento\\Service\\Repository\\Relation\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tobento\\Service\\Repository\\Relation\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --testdox --colors=always",
+        "psalm": "vendor/bin/psalm"
+    }
+}
